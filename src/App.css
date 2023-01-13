@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-logo {
@@ -15,6 +18,16 @@
 .form-container{
   display:flex;
   flex-direction: column;
+  /* margin: 0 auto; */
+  padding: 30px;
+  border: 1px solid #282c34;
+  max-width: 25%;
+}
+
+.input-labels{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .interest-input{
   padding: 10px;
@@ -29,14 +42,14 @@
   margin:10px;
 }
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
 }
 
 .App-link {
