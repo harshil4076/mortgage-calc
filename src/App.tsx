@@ -10,14 +10,13 @@ function App() {
   function handleCalculate(){
     if(principalAmount !== null && interestRate !== null && term!==null){
       let paymentCount = term * 12
-      console.log("paymentcount", paymentCount)
       let actualInterest = (interestRate/100)/12
-      console.log("actual interest", actualInterest)
       let calculate = principalAmount * (
         (actualInterest * ((1 + actualInterest)**paymentCount))/
         (((1+actualInterest)**paymentCount)-1)
         )
-      setMonthlyPayment(calculate)
+        let payment = Math.round(calculate*100)/100
+      setMonthlyPayment(payment)
     }
   }
   return (
